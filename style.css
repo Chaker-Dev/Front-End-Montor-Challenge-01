@@ -5,11 +5,14 @@
     --dark-blue-color:hsl(218, 44%, 22%);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body{
-    box-sizing: border-box;
     background-color: var(--dark-blue-color);
     font-family: Outfit;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,9 +21,8 @@ body{
     background-color: var(--white-color);
     padding: 20px;
     border-radius: 20px;
+    max-width: 450px;
     text-align: center;
-    width: 400px;
-    height: 650px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -28,12 +30,12 @@ body{
 }
 
 p{
-    font-size: 23px;
+    font-size: 1.4rem;
     color: var(--grayish-blue-color);
 }
 img {
-    max-width:100%;
-    max-height: 100%;
+    display: block;
+    max-width: 100%;
     border-radius: 15px;
     shape-outside: margin-box;
 }
